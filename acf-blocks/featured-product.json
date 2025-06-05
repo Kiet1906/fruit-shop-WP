@@ -1,0 +1,52 @@
+{
+    "key": "group_featured_product",
+    "title": "Featured Product Block",
+    "fields": [
+        {
+            "key": "field_featured_product",
+            "label": "Chọn sản phẩm nổi bật",
+            "name": "featured_product",
+            "type": "post_object",
+            "post_type": ["product"],
+            "return_format": "object",
+            "required": 1
+        },
+        {
+            "key": "field_custom_title",
+            "label": "Tiêu đề tùy chỉnh",
+            "name": "custom_title",
+            "type": "text",
+            "instructions": "Để trống để sử dụng tiêu đề sản phẩm"
+        },
+        {
+            "key": "field_custom_description",
+            "label": "Mô tả tùy chỉnh",
+            "name": "custom_description",
+            "type": "textarea",
+            "instructions": "Để trống để sử dụng mô tả sản phẩm"
+        },
+        {
+            "key": "field_button_text",
+            "label": "Nút bấm",
+            "name": "button_text",
+            "type": "text",
+            "default_value": "Xem chi tiết"
+        },
+        {
+            "key": "field_button_link",
+            "label": "Link nút bấm",
+            "name": "button_link",
+            "type": "url",
+            "instructions": "Để trống để sử dụng link sản phẩm"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/featured-product"
+            }
+        ]
+    ]
+} 
